@@ -1,0 +1,596 @@
+/*HEADER = De Todas las paginas*/
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Inter', sans-serif; 
+}
+
+
+
+/*LOGO*/
+#logo1 {
+  position: relative;
+  
+  left: -3%; /*posicion hacia la izquierda del logo*/
+  margin-bottom: 80px; /*Posicion del logo*/
+  margin-top: 20px;
+}
+
+/*Nombre de la Empresa*/
+#logo2 {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: -10px; /*Posicion del Titulo con el buscador*/
+  margin-top: -15%; /*Posicion del titulo*/
+}
+
+/*Botonsito de registrarse*/
+#registrado {
+  position: absolute;
+  right: 23%; /*Posicion a la izquierda del botoncito*/
+  top: 8%;
+}
+
+/*Botones extremo derecho superior*/
+#registro {
+  display: inline-flex;
+  background-color: #8FD2E8;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 15px;
+  align-items:center;
+  justify-content:center;
+  text-decoration: none;
+  position: absolute;
+  right: -11px;
+  top: 8%;
+}
+
+#ingresar {
+  display:inline-flex;
+  background-color: #8FD2E8;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 15%; /*Posicion del boton ingresar*/
+  top: 8%;
+}
+
+#carrito {
+  text-align: center;
+  display: inline-flex;
+  background-color: white;
+  color: #8FD2E8;
+  width: 130px;
+  height: 50px;
+  border-color: transparent;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 8%;
+  top: 20%; /*Distancia del carrito con los botones*/
+  font-size: 15px;
+}
+
+
+#buscador {
+  position: absolute;
+  left: 26%;
+  top: 28%;
+  margin-top: -30px; /*la distancia del buscador con el titulo*/
+}
+
+#busquedabarra {
+ 
+  width: 325px;
+  height: 43px;
+  font-size: 18px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid grey;
+  padding: 5%;
+}
+
+#buscar {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #E0A9C6;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-end-end-radius: 15px;
+  font-size: 20px;
+}
+
+/*Responsive del Header */
+
+.ResponsiveBuscador
+{
+ position: relative; 
+ text-align: center;
+ margin-bottom: 0px; /*la distancia del buscador con la barra del menú*/
+ left: 70px; /*Posicion del buscador*/
+}
+
+.ResponsiveLogo
+{
+position: relative;
+margin-top: 30px;
+right: 20px;
+left: -2%; /*posicion hacia la izquierda del logo*/
+margin-bottom: -100px;
+}
+
+.ResponsiveNombre
+{
+  margin-top: -150px;
+  margin-left: 350px;
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL (desde el dispositivo mas pequeño)*/
+
+@media only screen and (max-width:890px)
+{
+.ResponsiveBuscador, .ResponsiveLogo, .ResponsiveNombre
+{
+ flex-direction: column;
+}
+
+.ResponsiveLogo
+{
+  left:-60px;
+}
+ 
+ .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 50px;
+  top: -10px;
+  right: 180px;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 140px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 30px;
+  top: 40px;
+ }
+
+ .ResponsiveCarrito
+ {
+  position: absolute;
+  right: 70px;
+  top:100px;
+ }
+
+.ResponsiveNombre
+ {
+  position: relative;
+  text-align: center;
+  margin-bottom: -40px;
+  margin-left: -12%;
+  margin-top: 10%; /*Posicion del titulo*/
+ }   
+
+ .ResponsiveBuscador
+ {
+  left: -90px;
+  margin-bottom: 30px;
+ }
+}
+
+
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 900*/
+@media only screen and (min-width:900px)
+{
+  .ResponsiveLogo
+  {
+    position: relative;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+
+  .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: 220PX;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 130px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+  .ResponsiveNombre
+  {
+  position: relative;
+  text-align: center;
+  margin-bottom: -39px;
+  margin-left: -9%;
+  margin-top: 6%; /*Posicion del titulo*/
+  }
+
+  .ResponsiveBuscador
+  {
+   left: -70px;
+   margin-bottom: 20px;
+  }
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 1200*/
+@media only screen and (min-width:1200px)
+{
+  .ResponsiveLogo
+  {
+    position: relative;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: 220px;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 130px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 30px;
+  top: 40px;
+ }
+
+  .ResponsiveNombre
+  {
+  position: relative;
+  text-align: center;
+  margin-bottom: -45px;
+  margin-left: -5%;
+  margin-top: 2%; /*Posicion del titulo*/
+  }
+
+  .ResponsiveBuscador
+  {
+   left: 80px;
+   margin-bottom: 20px;
+  }
+}
+
+
+/*Responsive de la barra de Menú*/
+@media (min-width:500px) {
+
+  .barra {
+      list-style: none;
+      padding: 10px;
+      text-align: center;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+     
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 10px;
+ 
+ 
+}
+
+a {
+  text-decoration: none;
+  padding: 45px;
+  color: black;
+
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+ 
+ 
+}
+
+
+@media only screen and (min-width: 700px ) {
+  .barra {
+      list-style: none;
+      padding: 30px;
+      text-align: center;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+
+  @media only screen and (min-width: 1200px ) {
+      .barra {
+          list-style: none;
+          padding: 30px;
+          text-align: center;
+      }
+     
+      .boton {
+          text-decoration: none;
+          padding: 15px;
+          color: black;
+      }
+     
+      .lis {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: 35px;
+          border-right: 1px solid black;
+      }
+
+      a:hover {
+          color:#8FD2E8;
+        }
+  }
+}
+
+/* FIN : RESPONSIVE DEL HEADER DE  LA PAGINA PRINCIPAL*/
+
+
+   h1
+    {
+    color: white;
+    text-align:center;
+    font-size: 40px;
+    font-family:  Calibri;
+    border-bottom: 600px;
+    background-color: #8fd2e8;
+    margin-top: 0px;
+    margin-bottom: -45px;
+    }
+
+    h2
+    {
+    text-align: center;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      margin-top: auto;
+     
+    }
+   
+   
+    .form-register {
+      width: 600px;
+      background: whitesmoke;
+      padding: 30px;
+      margin: auto;
+      margin-top: 60px;
+      border-radius: 20px;
+      color: black;
+      box-shadow: 7px 13px 37px white;
+    }
+   
+    .form-register h4 {
+      font-size: 22px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+   
+    .controls {
+      width: 100%;
+      background: rgb(240, 195, 203);
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: black;
+    }
+   
+    .form-register p {
+      height: 20px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 30px;
+      color: black;
+      text-decoration: none;
+    }
+   
+    .form-register a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+   
+    .form-register .botons {
+      width: 100%;
+      background: black;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+ 
+    .form-register .botonsito {
+      width: 100%;
+      background: #8fd2e8;
+      border: none;
+      padding: 12px;
+      color: black;
+      margin: 16px 0;
+      font-size: 16px;
+     
+    }
+
+    .ingresoredes
+    {
+      position: relative;
+      left: 550px;
+      bottom: -200px;
+    }
+
+   
+         /*FOOTER = De todas las paginas*/
+
+      #datos1 {
+      background-color: #8FD2E8;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      }
+      
+      #textofooter1 {
+          position: relative;
+          top: 45px;
+         
+      }
+      
+      #datos2 {
+          background-color: #8FD2E8;
+          color: white;
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+          border-top: 20px solid white;
+          position: absolute;
+          height: 50px;
+      }
+      
+      #textofooter2 {
+          position: relative;
+          bottom: 10px;
+      }
+      
+      
+      
+      #redes {
+          position: relative;
+          left: 5cm;
+          bottom: 72px;
+      }
+
+        /*FOOTER = Pagina Principal con Responsive*/
+      
+         
+   @media only screen and (min-width:400px)
+   {
+
+    .EDdatos1 
+   {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+   }
+    .EDtextofooter1 
+   {
+    margin-top: -15px;
+    position: relative;
+    text-align: center;
+    top: 45px;
+    background-color: #8FD2E8;
+    width: 100%;
+    padding: 10px;
+   }
+    .EDredes
+   {
+    position: relative;
+    right: -180px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+   }
+   
+   .EDdatos2 
+   {
+    margin-top: -10px;
+    background-color: #8FD2E8;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border-top: 15px;
+    position: absolute;
+    height: 60px;
+    align-items: center;
+   } 
+   .EDtextofooter2 
+   {
+    position: relative;
+    color: white;
+    bottom: 5px;
+    padding: 20px;
+    font-size: 20px;
+   }
+   }
