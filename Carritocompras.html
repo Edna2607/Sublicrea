@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carrito de Compras </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="carritocompras.css">
+</head>
+
+<body>
+      <!-- HEADER-->
+  <div>
+    <!-- LOS DOS LOGOS-->
+    <header>
+    
+      <div class="ResponsiveLogo">
+      <a href="index.html"> <img style="cursor: pointer" id="logo1" src="img/Logo/logo grande png.png" alt="" height="135"></a></div>
+
+      <div class="ResponsiveNombre">
+      <img  id="logo2" src="img/Logo/logo nombre png.png" alt="" height="300px"></div>
+    
+      <!-- BUSCADOR -->
+      <div class="ResponsiveBuscador">
+              <p id ="buscador" >
+          
+                <input id ="busquedabarra" type="search" name="busquedaproductos" placeholder="Que estas buscando..." >
+          
+                <input id ="buscar" style="cursor: pointer" type="submit" value="Buscar">
+          
+              </p>
+      </div>
+
+              <!-- TODA LA PARTE DE LA DERECHA, REGISTRARSE INGRESAR Y EL CARRITO -->
+         
+        <div class="ResponsiveBotonRegistrado">
+           <a href="paginaprincipal.html"> <img  id="registrado" src="img/botones logos/usuarionoregistrado.png" alt="" height="40px"></a>
+          </div>
+
+          <div class="ResponsiveRegistrarse">
+           <button style="cursor: pointer" id="registro" ><a href="Registro.html" style="color:white;">Registrarse</a> </button></div>
+         
+          <div class="ResponsiveIngresar">
+           <button style="cursor: pointer" id="ingresar"> <a href="InicioSesion.html" style="color:white;">Ingresar </a> </button></div>
+      
+            <div class="ResponsiveCarrito">
+              <a href="Carritocompras.html"><button style="cursor: pointer" id="carrito"> <img src="img/botones logos/carrito.png" alt="" height="40px"> Carrito (0) </button></a>
+            </a> </div>
+          
+      </header>
+
+              <!-- BARRA DEL MENU -->
+
+    <nav>
+      <ul class="barra">
+          <li class="lis"><a href="nosotros.html" class= "boton" id="boton"> NOSOTROS </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> NUESTROS PRODUCTOS </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> ELIGE TU ESTILO </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> COTIZACIONES </a></li>
+          <li class="lis"><a href="" class= "boton" id="boton"> PROMOCIONES </a></li>
+          <li class="lis"  ><a href="" class= "boton" id="boton"> CONTACTO </a></li>
+      </ul>
+    </nav>
+      
+  </div>
+
+         <!-- FIN DEL HEADER-->
+
+        <!-- TITULO PÁGINA -->
+
+        <p id="DATOSENVIO">CARRITO DE COMPRAS</p>
+
+        <div class="container mt-5">
+            <div class="carrito-container">
+                <table id="tablaProductos" class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/mugs/mug blanco.jpg" alt="Producto" width="100" height="100">
+                            </td>
+                            <td>
+                                Mugs
+                            </td>
+                            <td>
+                                $ 15.900
+                            </td>
+                            <td>
+                                <input type="number" min="0" value="0"
+                                    oninput="calcularSubtotal(this.value, 15_900, document.querySelector('#subtotal1'))">
+                            </td>
+                            <td id="subtotal1" class="subtotal">
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Termos/Caramañola.jpg" alt="Producto" width="100" height="100">
+                            </td>
+                            <td>
+                                Termo
+                            </td>
+                            <td>
+                                $ 19.000
+                            </td>
+                            <td>
+                                <input type="number" min="0" value="0"
+                                    oninput="calcularSubtotal(this.value, 19_000, document.querySelector('#subtotal2'))">
+                            </td>
+                            <td id="subtotal2" class="subtotal">
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Textil/Pad mouse.jpg" alt="Producto" width="100" height="100">
+                            </td>
+                            <td>
+                                Textil
+                            </td>
+                            <td>
+                                $ 12.000
+                            </td>
+                            <td>
+                                <input type="number" min="0" value="0"
+                                    oninput="calcularSubtotal(this.value, 12_000, document.querySelector('#subtotal3'))">
+                            </td>
+                            <td id="subtotal3" class="subtotal">
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Mdf/Rompecabeza cuadrado.jpg" alt="Producto" width="100" height="100">
+                            </td>
+                            <td>
+                                MDF
+                            </td>
+                            <td>
+                                $ 5.000
+                            </td>
+                            <td>
+                                <input type="number" min="0" value="0"
+                                    oninput="calcularSubtotal(this.value, 5_000, document.querySelector('#subtotal4'))">
+                            </td>
+                            <td id="subtotal4" class="subtotal">
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Libretas/agenda 10x14.jpg" alt="Producto" width="100" height="100">
+                            </td>
+                            <td>
+                                Agendas
+                            </td>
+                            <td>
+                                $ 12.000
+                            </td>
+                            <td>
+                                <input type="number" min="0" value="0"
+                                    oninput="calcularSubtotal(this.value, 12_000, document.querySelector('#subtotal5'))">
+                            </td>
+                            <td id="subtotal5" class="subtotal">
+                                0
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/Vinil adhesivo/Copas.jpg" alt="Producto" width="100" height="100">
+                            </td>
+                            <td>
+                                Vinil ADH
+                            </td>
+                            <td>
+                                $ 7.000
+                            </td>
+                            <td>
+                                <input type="number" min="0" value="0"
+                                    oninput="calcularSubtotal(this.value, 7_000, document.querySelector('#subtotal6'))">
+                            </td>
+                            <td id="subtotal6" class="subtotal">
+                                0
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <span class="d-block">Total</span>
+                                <span class="d-block" id="total">0</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <button onclick="generarFactura()">Generar factura</button>
+            </div>
+
+
+            <div class="factura-container mt-5">
+                <div class="row">
+                    <div class="col-6">
+                        <h2> Factura de Venta N° 234 </h2>
+                    </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col-6 bg-info">
+                            <label> Facturar a: </label>
+                            <input type="text" placeholder="Nombre Completo">
+                        </div>
+                        <div class="col-6 bg-info">
+                            <input type="text" placeholder="Documento de Identidad">
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-6 bg-info">
+                            <label> N° de Pedido: </label>
+                            <input type="text" placeholder="...">
+                        </div>
+                        <div class="col-6 bg-info">
+                            <label> Fecha: </label>
+                            <input type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <table id="tablaFactura" class="table my-5">
+                        <thead>
+                            <tr>
+                                <th>Cantidad</th>
+                                <th>Descripción</th>
+                                <th>Precio unitario</th>
+                                <th>Importe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    <div class="row mt-6 mb-5">
+                        <div class="col-6 bg-info">
+                            <span>Total a Pagar</span>
+                        </div>
+                        <div class="col-6 bg-info">
+                            <span id="total2">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                    function calcularSubtotal(cantidad, precio, elementoSubtotal) {
+                        elementoSubtotal.textContent = cantidad * precio;
+
+                        calcularTotal()
+                    }
+
+                    function calcularTotal() {
+                        let total = 0;
+
+                        const subtotales = document.querySelectorAll('#tablaProductos .subtotal')
+
+                        for (let i = 0; i < subtotales.length; i++) {
+                            total = total + Number(subtotales[i].textContent);
+                        }
+
+                        document.querySelector('#total').textContent = total;
+                        document.querySelector('#total2').textContent = total;
+                    }
+
+                    function generarDetalleFactura(cantidad, descripcion, precio, importe) {
+                        const detalleFactura = document.querySelector('#tablaFactura tbody');
+
+                        const fila = detalleFactura.insertRow(0)
+
+                        const celdaCantidad = fila.insertCell(0)
+                        const celdaDescripcion = fila.insertCell(1)
+                        const celdaPrecio = fila.insertCell(2)
+                        const celdaImporte = fila.insertCell(3)
+
+                        celdaCantidad.textContent = cantidad;
+                        celdaDescripcion.textContent = descripcion;
+                        celdaPrecio.textContent = precio;
+                        celdaImporte.textContent = importe;
+                    }
+
+                    function generarFactura() {
+                        const filas = document.querySelectorAll('#tablaProductos tbody tr');
+
+                        for (let i = 0; i < filas.length; i++) {
+                            const celdas = filas[i].querySelectorAll('td');
+
+                            const cantidad = celdas[3].querySelector('input').valueAsNumber;
+                            const descripcion = celdas[1].textContent;
+                            const precio = celdas[2].textContent;
+                            const importe = celdas[4].textContent;
+
+                            generarDetalleFactura(cantidad, descripcion, precio, importe)
+                        }
+                    }
+                </script>
+
+<!-- BARRA DE DATOS INFERIOR -->
+   
+    <div>
+    <footer class="EDdatos1">
+      <p class= "EDtextofooter1">
+      SUBLICREA <br>
+      Medellin. <br>
+      310 490 64 35 <br>
+      sublicreacol@gmail.com <br> </p>
+
+    
+      <img class="EDredes" src="img/Botones/Facebook.png" alt="" height="60px">
+      <img class="EDredes" src="img/Botones/instagram.png" alt="" height="60px">
+      <img class="EDredes" src="img/Botones/WhatsaAp.png" alt="" height="60px">
+
+    </footer>
+
+    <footer class="EDdatos2">
+      <p class = "EDtextofooter2">
+      Sublicrea 2022 Todos los Derechos reservados.
+      </p>
+     </footer>
+
+  
+    </div>
+                
+</body>
+
+</html>
