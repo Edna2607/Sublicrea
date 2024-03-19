@@ -1,0 +1,797 @@
+/*INICIO = HEADER DE TODAS LAS PAGINAS*/
+
+/*HEADER = De Todas las paginas*/
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Inter', sans-serif; 
+}
+
+
+
+/*LOGO*/
+#logo1 {
+  position: relative;
+  
+  left: -3%; /*posicion hacia la izquierda del logo*/
+  margin-bottom: 100px; /*Posicion del logo*/
+  margin-top: 20px;
+}
+
+/*Nombre de la Empresa*/
+#logo2 {
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 10px; /*Posicion del Titulo con el buscador*/
+  margin-top: -15%; /*Posicion del titulo*/
+}
+
+/*Botonsito de registrarse*/
+#registrado {
+  position: absolute;
+  right: 23%; /*Posicion a la izquierda del botoncito*/
+  top: 8%;
+}
+
+/*Botones extremo derecho superior*/
+#registro {
+  display: inline-flex;
+  background-color: #8FD2E8;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 6%;
+  top: 8%;
+  
+}
+
+#ingresar {
+  display:inline-flex;
+  background-color: #8FD2E8;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border-color: transparent;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 15%; /*Posicion del boton ingresar*/
+  top: 8%;
+}
+
+#carrito {
+  text-align: center;
+  display: inline-flex;
+  background-color: white;
+  color: #8FD2E8;
+  width: 130px;
+  height: 50px;
+  border-color: transparent;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  right: 8%;
+  top: 19%; /*Distancia del carrito con los botones*/
+  font-size: 15px;
+}
+
+
+#buscador {
+  position: absolute;
+  left: 26%;
+  margin-top: -30px; /*la distancia del buscador con el titulo*/
+}
+
+#busquedabarra {
+ 
+  width: 325px;
+  height: 43px;
+  font-size: 18px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid grey;
+  padding: 5%;
+}
+
+#buscar {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #E0A9C6;
+  color: white;
+  width: 100px;
+  height: 43px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-end-end-radius: 15px;
+  font-size: 20px;
+}
+
+/*Responsive del Header */
+
+.ResponsiveBuscador
+{
+ position: relative; 
+ text-align: center;
+ margin-bottom: 10px; /*la distancia del buscador con la barra del menú*/
+ left: 70px; /*Posicion del buscador*/
+}
+
+.ResponsiveLogo
+{
+position: relative;
+margin-top: 30px;
+right: 20px;
+left: -2%; /*posicion hacia la izquierda del logo*/
+margin-bottom: -100px;
+}
+
+.ResponsiveNombre
+{
+  margin-top: -150px;
+  margin-left: 350px;
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL (desde el dispositivo mas pequeño)*/
+
+@media only screen and (max-width:890px)
+{
+.ResponsiveBuscador, .ResponsiveLogo, .ResponsiveNombre
+{
+ flex-direction: column;
+}
+
+.ResponsiveLogo
+{
+  left:-60px;
+}
+ 
+ .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 50px;
+  top: -10px;
+  right: 180px;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 140px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+ .ResponsiveCarrito
+ {
+  position: absolute;
+  right: 70px;
+  top:100px;
+ }
+
+.ResponsiveNombre
+ {
+  position: relative;
+  text-align: center;
+  margin-bottom: -40px;
+  margin-left: -12%;
+  margin-top: 10%; /*Posicion del titulo*/
+ }   
+
+ .ResponsiveBuscador
+ {
+  left: -90px;
+  margin-bottom: 80px; /*Distancia del buscador con la barra de Menú*/
+ }
+}
+
+
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 900*/
+@media only screen and (min-width:900px)
+{
+  .ResponsiveLogo
+  {
+    position: relative;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+
+  .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: 220PX;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 130px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+  .ResponsiveNombre
+  {
+  position: relative;
+  text-align: center;
+  margin-bottom: -39px;
+  margin-left: -9%;
+  margin-top: 4%; /*Posicion del titulo*/
+  }
+
+  .ResponsiveBuscador
+  {
+   left: -20px;
+   margin-bottom: 60px;
+  }
+}
+
+/* RESPONSIVE DE LA PAGINA PRINCIPAL 1200*/
+@media only screen and (min-width:1200px)
+{
+  .ResponsiveLogo
+  {
+    position: relative;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+
+  .ResponsiveBotonRegistrado
+ {
+  position: absolute;
+  margin: 0px;
+  top: 40px;
+  right: 220px;
+ }
+
+ .ResponsiveIngresar
+ {
+  position: absolute;
+  right: 130px;
+  top: 40px;
+ }
+
+ .ResponsiveRegistrarse
+ {
+  position:absolute;
+  right: 20px;
+  top: 40px;
+ }
+
+  .ResponsiveNombre
+  {
+  position: relative;
+  text-align: center;
+  margin-bottom: -45px;
+  margin-left: -5%;
+  margin-top: 2%; /*Posicion del titulo*/
+  }
+
+  .ResponsiveBuscador
+  {
+   left: 80px;
+   margin-bottom: 20px;
+  }
+}
+
+
+/*Responsive de la barra de Menú*/
+@media (min-width:500px) {
+
+  .barra {
+      list-style: none;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+     
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 10px;
+ 
+ 
+}
+
+a {
+  text-decoration: none;
+  padding: 45px;
+  color: black;
+
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+ 
+ 
+}
+
+
+@media only screen and (min-width: 700px ) {
+  .barra {
+      list-style: none;
+      padding: 30px;
+      text-align: center;
+  }
+ 
+  .boton {
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+  }
+ 
+  .lis {
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 35px;
+      border-right: 1px solid black;
+  }
+
+  a:hover {
+      color:#8FD2E8;
+    }
+
+  @media only screen and (min-width: 1200px ) {
+      .barra {
+          list-style: none;
+          padding: 30px;
+          text-align: center;
+          background-color:white;
+          margin-top: -15px; /*Distancia de la barra del menu con el buscador*/
+      }
+     
+      .boton {
+          text-decoration: none;
+          padding: 15px;
+          color: black;
+      }
+     
+      .lis {
+          display: inline-block;
+          font-size: 20px;
+          margin-top: 35px;
+          border-right: 1px solid black;
+      }
+
+      a:hover {
+          color:#8FD2E8;
+        }
+  }
+}
+
+/* FIN : RESPONSIVE DEL HEADER DE  LA PAGINA PRINCIPAL*/
+
+
+   /*FIN TEMPLATE*/
+   
+   
+   /*TITULO EDNA = CATEGORIAS - TEXTIL*/
+   h1
+    {
+    color: white;
+    text-align:center;
+    font-size: 40px;
+    font-family:  Calibri;
+    border-bottom: 600px;
+    background-color: #8fd2e8;
+    margin-top: 0px;
+    margin-bottom: -50px;
+    padding: 10px;
+    }
+  
+  /**/
+  
+  #botones 
+      {
+        background-color: white;
+        margin: 10px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 3px solid #8FD2E8;
+        width: 7cm;
+        height: 10cm;
+       }
+  
+   /*LA BARRA DEL MENÚ DE TODAS LAS PAGINAS*/
+  ul {
+      margin-top: -90px;
+      list-style: none;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #8FD2E8;
+     }
+  
+  a {
+      text-decoration: none;
+      padding: 45px;
+      color: black;
+    }
+  
+  li {
+      display: inline-block;
+      font-size: 16px;
+     }
+  
+     h1
+      {
+      color: white;
+      text-align:left;
+      font-size: 40px;
+      font-family:  Calibri;
+      border-bottom: 620px;
+      background-color: #8fd2e8;
+      margin-top: 10px;
+      margin-bottom: -40px;
+      }
+  
+       /*LA BARRA 1 DE PRODUCTOS CATEGORIA = TEXTIL*/
+      .EDbarra1 ul
+      {
+        display: flex;
+        list-style: none;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+     
+      .EDbarra1 li 
+      {
+        margin-left: 260px; /*De esta manera hay espacio entre las palabras*/
+        margin-right: -200px;
+      }
+      
+     .EDbarra1 a
+      {
+       text-decoration: none;
+       color: azure;
+       font-size: 22px;
+      }
+     
+  
+       /*CODIGO = CATEGORIA TEXTIL*/
+       /*LOS PRODUCTOS DE LA PARTE DE ARRIBA*/
+      #EDproductos1 
+        {
+        padding-inline: 17%;
+        }
+    
+       #EDbotones1 
+       {
+        background-color: white;
+        margin: 10px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 3px solid #8FD2E8;
+        width: 7cm;
+        height: 11cm;
+       }
+  
+       #EDmoverimagen /*Para hacerle ese enlace a la imagen y que se fuera a la descripcion de productos me toco hacerle un ID para mover las imagenes, con este ID acomode todas las imagenes*/
+       {
+        height : 230px; 
+        margin: 10px;
+        padding: 10px;
+        width: 6cm;
+        right: 60px;
+        position: relative;
+       }
+    
+       #EDbotonproductos1 {
+        background-color: #E0A9C6;
+        color: white;
+        font-size: 15px;
+        width: 160px;
+        height: 25px;
+        border-color: transparent;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 3px;
+        position: relative;
+        left: 17%;
+    }
+    
+    article p {
+        font-size: 15px;
+    }
+  
+       /*LA BARRA 2 DE PRODUCTOS*/
+      .EDbarra2 ul
+      {
+        margin-bottom: 100px;
+        margin-top: 30px;
+        display: flex;
+        list-style: none;
+      }
+     
+      .EDbarra2 li 
+      {
+        margin-left: 120px; /*De esta manera hay espacio entre las palabras*/
+        margin-right: -80px;
+      }
+      
+     .EDbarra2 a
+      {
+       text-decoration: none;
+       color: azure;
+       font-size: 22px;
+      }
+     
+  
+     /*LOS PRODUCTOS DE LA PARTE DE ABAJO*/
+     #EDproductos2 
+     {
+      margin-top: -70px;
+     padding-inline: 5%;
+     }
+  
+    #EDbotones2 
+    {
+     background-color: white;
+     margin: 10px;
+     border-radius: 30px;
+     padding: 10px;
+     border: 3px solid #8FD2E8;
+     width: 7cm;
+     height: 10cm;
+    }
+  
+    #EDbotonproductos2 {
+     background-color: #E0A9C6;
+     color: white;
+     font-size: 15px;
+     width: 160px;
+     height: 25px;
+     border-color: transparent;
+     border-radius: 15px;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     padding: 3px;
+     position: relative;
+     left: 17%;
+     }
+  
+      /*FIN CODIGO = CATEGORIA GENERAL TEXTIL*/
+  
+      /*COGIDO = CAMISAS*/
+  
+      #EDcamisetas3 {
+        position: relative;
+        bottom: -30px;
+        font-size: 30px;
+        color: white;
+        font-family:  Calibri;
+        text-align:center;
+        background-color: #8FD2E8;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 60px;
+       }
+  
+        #EDCamisas 
+        {
+         margin-top: -20px;
+        padding-inline: 5%;
+        }
+     
+       #EDbotonescamisas 
+       {
+        background-color: white;
+        margin: 10px;
+        border-radius: 30px;
+        padding: 10px;
+        border: 3px solid #8FD2E8;
+        width: 9cm;
+        height: 10cm;
+       }
+     
+       #EDbotonRegresar {
+        background-color: #8fd2e8;
+        color: white;
+        font-size: 15px;
+        width: 160px;
+        height: 40px; /*Para que el boton se vea un poco mas grande*/
+        border-color: transparent;
+        border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 5px;
+        position: relative;
+        left: 8%;  /*Esta es la posicion centrado a la imagen camisetas*/
+        }
+  
+       #EDcantidad1
+      {
+      width: 5px;
+      height: 5px;
+      padding: 0px;
+      color: #8FD2E8;
+      position: relative;
+      left: -5%;/*la posicion en relacion al boton de abajo*/
+      margin-top: 110px;
+      margin-left: 80px;
+      }
+  
+      h6
+      {
+        margin-bottom: 3px;
+      }
+  
+      #EDContador1
+      {
+        width: 50px;
+        height: 25px;
+      }
+  
+      #EDValorproductos
+      {
+       color:#8FD2E8;
+       position: relative;
+       margin-top: -50px;
+       margin-left: 250px;
+       font-size: 40px;
+       margin-bottom: 15px;
+      }
+  
+    #EDbotonCotizar
+    {
+          background-color:#E0A9C6;
+          color: white;
+          font-size: 19px;
+          width: 250px;
+          height: 40px; /*Para que el boton se vea un poco mas grande*/
+          border-color: transparent;
+          border-radius: 15px;
+          align-items: center;
+          justify-content:center;
+          text-decoration: none;
+          padding: auto;
+          position: relative;
+          left: 25.5%;/*la posicion en relacion al boton de abajo*/
+          margin-top: -50px;
+        }
+  
+        #Edminiwpp
+        {
+          width: 20px;
+          height: 20px;
+          margin:0px;
+          color: #E0A9C6;
+          background-color: #E0A9C6;
+        }
+       
+  
+        #EDbotonFinalizarCompra
+        {
+          background-color:#8fd2e8;
+          color: white;
+          font-size: 15px;
+          width: 200px;
+          height: 35px; /*Para que el boton se vea un poco mas grande*/
+          border-color: transparent;
+          border-radius: 15px;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          padding: 5px;
+          position: relative;
+          bottom: -50px;
+          left: -100px;
+        }
+  
+         /*TEXTO= Camisas*/
+         .EDtextocamisas
+         {
+          background-color: white;
+          float: right;
+          width: 700px;
+          height: 100px;
+          margin-top: 10px;
+          margin-bottom: 12 px;
+          padding-inline: 70px; /*Posicion del texto al lado izquierdo*/
+          font-size: 25px;
+         }
+  
+         
+  
+      /*EL PIE DE TODAS LAS PAGINAS CON RESPONSIVE*/
+  
+     
+      @media only screen and (min-width:500px)
+      {
+ 
+       .EDdatos1 
+      {
+       color: white;
+       text-align: center;
+       font-size: 20px;
+      }
+       .EDtextofooter1 
+      {
+       margin-top: -15px;
+       position: relative;
+       text-align: center;
+       top: 45px;
+       background-color: #8FD2E8;
+       width: 100%;
+       padding: 10px;
+      }
+       .EDredes
+      {
+       position: relative;
+       right: -180px;
+       bottom: 50px;
+       width: 40px;
+       height: 40px;
+      }
+      
+      .EDdatos2 
+      {
+       margin-top: -10px;
+       background-color: #8FD2E8;
+       width: 102%;
+       text-align: center;
+       font-size: 20px;
+       border-top: 15px;
+       position: absolute;
+       height: 60px;
+       align-items: center;
+      } 
+      .EDtextofooter2 
+      {
+       position: relative;
+       color: white;
+       bottom: 30px;
+       padding: 20px;
+       font-size: 20px;
+      }
+      }
